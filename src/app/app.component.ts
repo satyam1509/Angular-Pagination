@@ -12,9 +12,7 @@ export class AppComponent {
   title = 'pagination';
   page = 1;
   data:Observable<any>;
-even: any;
-odd: any;
+  searchText:any;
   constructor(private httpclient: HttpClient) {
   this.data = this.httpclient.get('https://jsonplaceholder.typicode.com/posts');}
-
 }
